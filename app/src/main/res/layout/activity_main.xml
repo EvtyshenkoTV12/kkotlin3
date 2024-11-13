@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Введення середньої потужності -->
+    <EditText
+        android:id="@+id/avg_power"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Середня потужність (МВт)"
+        android:inputType="numberDecimal" />
+
+    <!-- Введення сигма значення 1 -->
+    <EditText
+        android:id="@+id/sigma1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сигма значення 1"
+        android:inputType="numberDecimal" />
+
+    <!-- Введення сигма значення 2 -->
+    <EditText
+        android:id="@+id/sigma2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сигма значення 2"
+        android:inputType="numberDecimal" />
+
+    <!-- Введення ціни електроенергії -->
+    <EditText
+        android:id="@+id/electricity_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ціна електроенергії (грн/кВтгод)"
+        android:inputType="numberDecimal" />
+
+    <!-- Кнопка для розрахунку прибутку -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Розрахувати прибуток" />
+
+    <!-- Поле для відображення результату -->
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Результат з'явиться тут"
+        android:paddingTop="16dp"/>
+</LinearLayout>
